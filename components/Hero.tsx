@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-6xl font-bold text-white">Conecta. Comparte. Crece.</h1>
         <p className="text-xl text-gray-200 leading-relaxed">Una comunidad donde los desarrolladores pueden compartir conocimientos, resolver dudas y conectar con otros profesionales.</p>
         <div className="flex flex-col sm:flex-row gap-4 mt-8">
-         <Link href="/register"> <Button className="bg-white text-codePrimary hover:bg-background/85 border-none rounded-full"> Únete ahora <ArrowRight size={20} /></Button></Link>
+          <Link href="/register"> <Button className="bg-white text-codePrimary hover:bg-background/85 border-none rounded-full"> Únete ahora <ArrowRight size={20} /></Button></Link>
           <Link href="/posts"> <Button className="bg-codePrimary text-white hover:bg-background/85 hover:text-codePrimary border-none rounded-full">Explorar posts</Button></Link>
         </div>
       </div>
