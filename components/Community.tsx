@@ -1,6 +1,7 @@
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
 import { BadgeCheck, ArrowRight } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 const Community = () => {
   return (
@@ -12,9 +13,11 @@ const Community = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="relative">
-                  <img src="https://th.bing.com/th/id/R.e1a3a22b0168787b7078b4093c514afe?rik=55hOchBhJ5JnPA&pid=ImgRaw&r=0" 
-                  alt="Community" 
-                  className="w-full h-auto object-cover rounded-2xl shadow-lg" />
+                   <Image src="https://th.bing.com/th/id/R.e1a3a22b0168787b7078b4093c514afe?rik=55hOchBhJ5JnPA&pid=ImgRaw&r=0" 
+                  alt="Community"
+                  width={500}
+                  height={500}
+                  className="object-cover rounded-2xl shadow-lg" />
                 </div>
                 <div className="space-y-6 text-white">
                 <p className="text-lg leading-relaxed max-w-lg">

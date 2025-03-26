@@ -91,8 +91,12 @@ export function RegisterForm({
       } else {
         toast.error("Error al registrar usuario");
       }
-    } catch (error: any) {
-      toast.error(error.response?.data?.error || "Error al registrar usuario");
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        toast.error(error.message || "Error al registrar usuario");
+      } else {
+        toast.error("Error desconocido al registrar usuario");
+      }
       console.error("Error registering user:", error);
     }
   }

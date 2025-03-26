@@ -2,6 +2,7 @@ import { Button } from "./ui/button"
 import { Badge } from "./ui/badge"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 const Hero = () => {
   return (
     <section className="bg-gradient-to-r from-codeSecondary/80 to-codePrimary/80 px-4 py-24">
@@ -20,9 +21,11 @@ const Hero = () => {
       <div className="relative group">
       <div className="absolute inset-0 bg-gradient-to-r from-codePrimary/30 to-codeSecondary/30 rounded-2xl transform group-hover:-rotate-2 transition-transform duration-300"></div>
         <div className="relative">
-          <img 
+          <Image 
             src="https://th.bing.com/th/id/R.e1a3a22b0168787b7078b4093c514afe?rik=55hOchBhJ5JnPA&pid=ImgRaw&r=0" 
-            alt="Developers collaboration" 
+            alt="Developers collaboration"
+            width={800}
+            height={600}
             className="rounded-2xl transform perspective-1000 rotate-1 group-hover:rotate-0 transition-all duration-300 shadow-2xl border-4 border-gray-800/50"
           />
         </div>
