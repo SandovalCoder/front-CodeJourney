@@ -3,7 +3,8 @@ import { LoginResponse } from "../types/LoginResponse"; //Este continene el toke
 import { User } from "../types/user"; //Este contiene la interfaz de usuario
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/users"; // Asegura que sea tu URL correcta
+//const API_URL = "http://localhost:5000/api/users"; // Asegura que sea tu URL correcta
+const API_URL = "https://back-code-journey.vercel.app/api/users"; //para el deploy
 
 // Login
 export const loginUser = async (

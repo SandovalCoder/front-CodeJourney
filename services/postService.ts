@@ -2,7 +2,8 @@
 import { Post } from "../types/posts";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/posts"; // Asegúrate de que sea la URL correcta
+//const API_URL = "http://localhost:5000/api/posts"; // Asegúrate de que sea la URL correcta
+const API_URL = "https://back-code-journey.vercel.app/api/posts"; //para el deploy
 
 // Obtiene todos los posts junto con sus comentarios
 export const getPosts = async (): Promise<Post[] | null> => {

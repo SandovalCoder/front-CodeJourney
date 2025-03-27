@@ -2,7 +2,8 @@
 import { Comment } from "../types/comment";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/comments";
+//const API_URL = "http://localhost:5000/api/comments"; //Asegúrate de que sea la URL correcta
+const API_URL = "https://back-code-journey.vercel.app/api/comments"; //para el deploy
 
 // Obtiene todos los comentarios (si la API así lo permite)
 export const getComments = async (): Promise<Comment[] | null> => {
